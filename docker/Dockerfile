@@ -1,5 +1,5 @@
 ARG PYTORCH="1.3"
-ARG CUDA="10.1"
+ARG CUDA="10.0"
 ARG CUDNN="7"
 
 FROM pytorch/pytorch:${PYTORCH}-cuda${CUDA}-cudnn${CUDNN}-devel
@@ -14,6 +14,6 @@ RUN apt-get update && apt-get install -y libglib2.0-0 libsm6 libxrender-dev libx
 
 # Install SOLO
 RUN conda install cython -y && conda clean --all
-RUN git clone https://github.com:WXinlong/SOLO.git /SOLO
+RUN git clone https://github.com/lzhnb/SOLO.git /SOLO
 WORKDIR /SOLO
 RUN pip install --no-cache-dir -e .
