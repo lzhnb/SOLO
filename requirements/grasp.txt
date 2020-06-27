@@ -1,0 +1,13 @@
+trimesh==2.36.7
+pybullet==2.4.8
+tqdm
+pathlib
+Imath
+colorsys
+open3d
+OpenEXR
+Imath
+mayavi
+joblib
+matplotlib
+opencv-python
